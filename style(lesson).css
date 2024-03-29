@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* universal selector*/
+
+p{
+    color: red;
+}
+
+/* tag selector */
+
+.heading{
+    color: green;
+}
+
+/* class selector */
+
+#register-btn{
+    background-color: dodgerblue;
+}
+
+/* id selector */
+
+p[data-color]{
+    color: gold;
+}
+
+p[data-color="aqua"]{
+    color: aqua;
+}
+
+/* attribute selector */
+
+b, strong{
+    background-color: red;
+}
+
+/* multiple selector */
+
+.parent .child{
+    color: blue;
+}
+
+.parent >.child{
+    color: blue;
+}
+
+.paernt.child/*  (ikkita classga ega bolgan element) */
+
+/* parent-child selectlash */
+
+button[form-button]{
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+button[form-button="not-active"]{
+    opacity: 0.5;
+    user-select: none;
+    pointer-events: none;
+}
+
+/* practice attribute */
+
+p + span /* bitta kesa va ortasida hech narsa bolmasa */{
+    background-color: dodgerblue;
+}
+
+p ~ span /* orasida h1 h2 va h.k boganida kishlatiladi */{
+    background-color: brown;
+}
+
+/* elemnt dan keyingi elemntga style berish */
